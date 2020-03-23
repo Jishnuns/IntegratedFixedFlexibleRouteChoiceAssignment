@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>org.matsim</groupId>
+		<artifactId>contrib</artifactId>
+		<version>0.10.0</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.matsim.contrib</groupId>
+	<artifactId>av</artifactId>
+	<name>av</name>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+<repositories>
+		<repository>
+			<!-- Geotools is not on Maven central -->
+			<id>osgeo</id>
+			<name>Geotools repository</name>
+			<url>http://download.osgeo.org/webdav/geotools</url>
+		</repository>
+		<repository>
+			<id>matsim</id>
+			<url>http://dl.bintray.com/matsim/matsim</url>
+		</repository>
+		<repository>
+			<id>ojo-snapshots</id>
+			<url>http://oss.jfrog.org/libs-snapshot</url>
+		</repository>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+	<dependencies>
+
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>dvrp</artifactId>
+			<version>0.10.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>taxi</artifactId>
+			<version>0.10.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.10</version>
+		</dependency>
+		
+	</dependencies>
+
+</project>

@@ -1,0 +1,12 @@
+AlbatrossAgents: Demand data in MATSim format for amsterdam from albatross
+amsterdamjosm: Network data for Amsterdam
+mergednetwork: Amsterdam network (detailed) + pt network for Netherlands (pt network of 2017)
+mergednetworknew: Amsterdam network (basic) + pt amsterdam (pt network of 2013)
+amsterdamjosmandamspt: Merged file of amsterdamjosm and transitnetwork
+The pt networks and schedules are those of amsterdam in 2017 (24-10-17)
+greater-amsterdam-no-NaN: Detailed road network of amsterdam municipality and the surrounding regions 
+Amsterdam updated: Detailed network including all road layers for amsterdam (including Schipol)
+Amsterdam updated basic layer: Same as above but does not have all the detailed road layers (only till secondary)
+Final: All layers from Konstanze(network/Individual layers from Konstanze/ network) merged,cleaned then merged with pt network 2017
+new: Unconnected links and nodes of Final layer removed 
+check: 'new' layer without detailed road network (Use as final network)
